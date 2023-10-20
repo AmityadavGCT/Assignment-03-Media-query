@@ -1,0 +1,211 @@
+/* Task:1 CSS Part */
+.container{
+    height: 600px;
+    width: 900px;
+    border: 2px solid black;
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+    margin: auto;
+    grid-template-areas:
+        'top top right'
+        'left middle bottom-right'
+        'left zero bottom-right'
+    ;
+}
+.box1{
+    grid-area: top;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.box2{
+    grid-area: right;
+    overflow: hidden;
+}
+.box3{
+    grid-area: left;
+    overflow: hidden;
+    grid-row-start: 2;
+    grid-row-end: 4;
+} 
+.box4{
+    grid-area: middle;
+    overflow: hidden;
+}
+.box5{
+    grid-area: bottom-right;
+    overflow: hidden;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.box6{
+    grid-area: zero;
+    overflow: hidden;
+}
+
+/* Task:2 CSS Part */
+ .cont{
+    height: 150px;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid black;
+    display: grid;
+    gap: 8px;
+    grid-template-areas:
+        '_A _A _B'
+        '_C _D _B'
+    ;
+ }
+ .past1{
+    grid-area: _A;
+    background-color: rgb(232, 147, 87);
+    grid-column-start: 1;
+    grid-column-end: 3;
+ }
+ .past2{
+    grid-area: _B;
+    background-color: rgb(222, 135, 73);
+    grid-row-start: 1;
+    grid-row-end: 3;
+ }
+ .past3{
+    grid-area: _C;
+    background-color: rgb(214, 132, 73);
+ }
+ .past4{
+    grid-area: _D;
+    background-color: rgb(214, 130, 70);
+ }
+ /* Task:3 CSS Part */
+ .card{
+    width: 400px;
+    display: grid;
+    grid-template-areas: "x x";
+    grid-template-rows: 50px;
+    grid-auto-rows: 200px;
+    border: 2px solid black;
+
+ }
+ .card > div{
+    border: 1px solid black;
+    background-color: rgb(241, 149, 149);
+ }
+
+ /* Task:4 CSS Part */
+ .Container{
+    height: 200px;
+    width: 950px;
+    padding: 20px;
+    gap: 5px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+
+ }
+ .Box{
+    height: 100px;
+    width: 150px;
+    text-align:left;
+    border-radius: 5%;
+ }
+ .Box1{
+    color: white;
+    background-color: black;
+    order: 7;
+ }
+ .Box2{
+    background-color: rgb(169, 168, 168);
+    order: 8;
+ }
+ .Box3{
+    color: white;
+    background-color: black;
+ }
+ .Box4{
+    background-color: rgb(177, 176, 176);
+ }
+ .Box5{
+    color: white;
+    background-color: black;
+ }
+ .Box6{
+    background-color: rgb(179, 178, 178);
+ }
+ .Box7{
+    color: white;
+    background-color: black;
+ }
+ .Box8{
+    background-color: grey;
+ }
+ /* Task:5 CSS Part */
+ /* justify-items exmaple */
+ .main{
+   height: 100svh;
+   border: 2px solid black;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows:repeat(2, 1fr);
+ }
+ .rap{
+   height: 200px;
+   width: 250px;
+   border: 1px solid black;
+   
+ }
+  .rap1{
+   background-color: red;
+ }
+  .rap2{
+   background-color: pink;
+ }
+.rap3{
+   background-color: yellow;
+ }
+  .rap4{
+   background-color: green;
+ }
+  .rap5{
+   background-color: blue;
+ }
+  .rap6{
+   background-color: orange;
+ }
+ /* justify-self example */
+ .main-container{
+   height: 100svh;
+   display: grid;
+   border: 2px solid black;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows:repeat(2, 1fr);
+ }
+ .gap{
+   height: 200px;
+   width: 250px;
+   border: 1px solid black;
+   justify-self: center;
+   align-self: center;
+   
+ }
+  .gap1{
+   background-color: red;
+ }
+  .gap2{
+   background-color: pink;
+ }
+   .gap3{
+   background-color: yellow;
+ }
+  .gap4{
+   background-color: green;
+ }
+  .gap5{
+   background-color: blue;
+ }
+  .gap6{
+   background-color: orange;
+ }
